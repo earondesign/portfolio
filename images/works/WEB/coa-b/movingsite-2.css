@@ -1,0 +1,293 @@
+h1, h2, h3, h4{
+	text-align: center;
+	padding: 2% 2%;
+}
+
+
+/* HAMBUERGER MENU*/
+.header {
+  background-color: #f89826;
+  display: block;
+  margin: auto;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #f89826;
+}
+.header li a{
+  padding: 14px 10px;
+  text-decoration: none;
+
+}
+.header .menu li {
+  display: inline-block;
+    padding: 14px 10px;
+}
+.header li a:hover {
+  background-color: #f4f4f4;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 23px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 25px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+ 
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+ 
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+ 
+.header .menu-btn:checked ~ .menu {
+  max-height: 245px;
+}
+ 
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+ 
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+ 
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+ 
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+/* HAMBUERGER MENU*/
+a{
+	color:white;
+	text-decoration: underline;
+}
+
+a:hover{
+	color:#052E78;
+	text-decoration: underline;
+}
+.usps{
+	text-decoration: none;
+	color:#f89826 !important;
+	font-size: 1.5em;
+}
+
+img{
+	align-items: center;
+}
+.container{
+	width: 100%;
+	clear: both;
+}
+
+#top{
+	width: 100%;
+	height: 450px;
+	background-image: url(img/top-bg.png);
+	color: white;
+	font-size: 1.4em;
+}
+
+.row{
+	margin: auto;
+}
+
+.top-text{
+	text-align: center;
+	padding:5% 20%;
+	font-size: 1.4em;
+	background-color: #2babe2;
+	color: white;
+	margin-bottom: 0px !important;
+}
+
+
+.big-icon{
+	width: 50%;
+	vertical-align: center;
+}
+.wrapper{
+	padding-top: 8%;
+	text-align: center;
+}
+.instructions{
+	background-color: #fee5c9;
+	font-size: 1.2em;
+}
+
+.header-text, .call-out, .bottom{
+	background-color:  #2babe2;
+	color: white;
+}
+
+.small-icon{
+	width: 40%;
+	padding-bottom: 10px;
+}
+.col-sm{
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+.bottom{
+	padding-bottom: 2%;
+}
+
+.checklist-title{
+	float: left;
+}
+
+#button{
+	float: right;
+	display: block;
+	margin-right: 10%;
+	margin-top: 1%;
+	background-color: #f89826;
+	text-decoration: none;
+	padding: 2% 6%;
+	font-size: 1.4em;
+	border-radius: 10px;
+}
+
+.footer-menu{
+	background-color: #f89826;
+	margin: auto;
+	overflow: hidden;
+	text-decoration: none;
+	font-size: 1.2em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+
+}
+
+@media (max-width: 768px) { 
+	
+	.header .menu li {
+  		display: block;
+   		padding: 14px 10px;
+   		text-align: center;
+   		font-size: 1.2em;
+	}	
+
+
+	.big-icon{
+		width: 70%;
+	}
+	
+	#button{
+		margin-right: 28%;
+	}
+	.mail-img{
+		width: 70%;
+	}
+
+	.footer-menu{
+		padding-left: 7%;
+	}
+
+
+	.footer-menu li{
+		display: block;
+		text-align: center;
+		padding-bottom: 2%;
+
+	}
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+	.wrapper{
+	padding-top: 10%;
+	}
+
+	.instructions{
+	padding-top: 8%;
+	}
+
+	.footer-menu{
+		padding-left: 22%;
+	}
+
+	.footer-menu li{
+		display: inline;
+		padding-left: 6%;
+		padding-bottom: 2%;
+		text-decoration: none;
+	}
+	.header li {
+  	  float: left;
+ 	 }
+
+ 	.header li a {
+    	padding: 20px 30px;
+ 	 }
+
+  	.header .menu {
+   		clear: none;
+   	 	float: right;
+   	 	max-height: none;
+  	}
+
+  .header .menu-icon {
+    	display: none;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+	.big-icon{
+		width: 55%;
+	} 
+	
+}
+
