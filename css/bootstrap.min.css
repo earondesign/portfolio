@@ -11,6 +11,8 @@
     margin: 0 auto;
 }
 
-.carousel-inner {
-   
+.item .img-bg-text{
+	font-size: 5em;
+	font-weight: 700;
+
 }
