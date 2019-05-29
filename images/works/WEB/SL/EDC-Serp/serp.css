@@ -1,0 +1,149 @@
+
+
+body{
+	background-color: #ebebeb;
+
+}
+
+#nav{
+	background-color: white;
+	height:auto;
+	margin-bottom: 1.3%;
+}
+
+#nav > img{
+	height: 40px;
+	margin:0 auto;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+.container > .full-item{
+	box-sizing: border-box;
+	background-color: white;
+	box-shadow: 1px 1px 1px grey;
+	margin-bottom: 1%;
+	padding:11px 5px;
+	line-height: .8;
+	border-left: 8px solid #448ccb;
+	text-transform: capitalize;
+
+}
+
+body > div.container div.col-9 > h2 {
+	color:#0c6788;
+	line-height: 1 !important;
+}
+
+.col-9 .sub-header{
+	color: #696f6f;
+	font-weight: 500;
+	font-size: 1.2em;
+	line-height: 1.1 !important;
+}
+
+.col-9 .domain-text{
+	color:#57bb52;
+}
+
+.row .col-1 img{
+	transform:translateY(19%);
+	max-width:45px !important;
+}
+
+.row .col-1{
+	 max-width: 6.333333% !important;
+}
+
+.arrows > .fa-arrow-right{
+	font-size: 2em;
+	background-color: white;
+  	color: transparent;
+ 	text-shadow: 2px 1px 1px rgba(255,255,255,0.5);
+  	-webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+
+.arrows{
+	background: linear-gradient( #4bccfa, #45b6de) !important;
+	height: 70%;
+	display: block;
+    padding: 20px 40px !important;
+    margin-top: 11px;
+    max-width: 11.666667% !important;
+
+
+}
+
+.arrows:hover{
+	background-color: #45b6de;
+
+
+}
+
+@media (min-width: 769px){
+	div.container  div.arrows > span{
+		display: none;
+	}
+
+	div.container .col-9 {
+		flex: 0 0 80% !important;
+		max-width: 80% !important;
+	}
+}
+
+@media (max-width: 768px ){
+
+	.container > .full-item{
+		display:block;
+		margin:7px 3px;
+	}
+
+	.full-item .arrows{
+		max-width: 97% !important;
+	}
+
+	.full-item .col-9{
+		max-width:100% !important;
+	}
+
+	.arrows > .fa-arrow-right{
+	font-size: 2.2em;
+	}	
+
+	.row .col-1 img{
+		display: none;
+	}
+
+	.arrows{
+		display: inline-flex;
+		margin: 6px;
+	}
+
+	div.col-2.arrows > span{
+	display: block;
+	padding: 5px;
+	width: 70%;
+	color:white;
+	font-weight: 600;
+	font-size: 2em;
+	margin-left: 13%;
+	}
+
+}
+
+
+
+@media (max-width: 482px){
+	div.col-2.arrows > span{
+	width: 90%;
+	font-weight: 600;
+	font-size: 1.3em;
+	margin-left: .4%;
+	}
+
+	.arrows > .fa-arrow-right {
+    font-size: 1.6em;
+}
+}

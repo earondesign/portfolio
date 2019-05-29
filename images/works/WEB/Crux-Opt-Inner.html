@@ -1,0 +1,175 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>{{Inner}}</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		
+		body{
+			font-family: "Roboto", Arial, sans-serif;
+   			font-size: 15px;
+    		min-width: 270px;
+    		line-height: 1.42857143;
+    		color: #555;
+    		font-weight: 400;
+    		background-color: aliceblue;
+		}
+
+		.header-wrapper{
+			background:#fff;
+				-webkit-box-shadow: 0 3px 2px 0 rgba(0,0,0,0.05);
+   			 -moz-box-shadow: 0 3px 2px 0 rgba(0,0,0,0.05);
+    		box-shadow: 0 3px 2px 0 rgba(0,0,0,0.05);
+		}
+
+
+    	.navbar{
+    		font-size: 18px;
+    		line-height: 20px;
+    		font-weight: 700;
+    	}
+
+    	.dropdown-menu{
+    		left: auto;
+    	}
+		.mag-content {
+    		margin-left: -15px;
+    		margin-right: -15px;
+    		padding-left: 30px;
+    		padding-right: 30px;
+		}
+
+		.main-content{
+			margin-top: 30px;
+			margin-bottom: 30px;
+    		padding-top: 30px;
+    		background: #fff;
+    		min-height: 400px;
+    		margin-bottom: 0;
+    		-webkit-box-shadow: 0 3px 2px 0 rgba(0,0,0,0.05);
+   			 -moz-box-shadow: 0 3px 2px 0 rgba(0,0,0,0.05);
+    		box-shadow: 0 3px 2px 0 rgba(0,0,0,0.05);
+    		
+		}
+
+		.container{
+			padding-right: 15px;
+    		padding-left: 15px;
+    		margin-right: auto;
+    		margin-left: auto;
+		}
+
+		.blog-content{
+			position: relative;
+		}
+
+		.post-wrapper{
+			font-size: 15px;
+    		line-height: 26px;
+    		margin-bottom: 30px;
+    		overflow: hidden;
+		}
+
+		#sidebar{
+			overflow: hidden;
+			max-width: 355px;
+			margin:0 auto;
+		}
+
+
+		footer{
+			background:#fff;
+			height: 50px;
+		}
+		
+
+		@media (min-width: 1200px){
+			.container {
+    			width: 1170px;
+    		}
+    	}
+
+    	@media (min-width: 992px){
+			.container {
+    			width: 970px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+<div id="main">
+	<header class="header-wrapper clearfix">
+		<div id="nav-wrap" class="col-md-12">
+			<nav class="navbar navbar-expand-lg navbar-light">
+  				<a class="navbar-brand" href="#">LOGO</a>
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    				<span class="navbar-toggler-icon"></span>
+  				</button>
+  				<div class="collapse navbar-collapse" id="navbarNav">
+   					 <ul class="navbar-nav">
+      					<li class="nav-item">
+      						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      						link 1</a>
+      						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          						<a class="dropdown-item" href="#">Action</a>
+          						
+        					</div>
+
+      					</li>
+      					<li class="nav-item">
+      						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      						link 2</a>
+      						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          						<a class="dropdown-item" href="#">Action</a>
+          						<a class="dropdown-item" href="#">Another action</a>
+          						
+
+      					</li>
+      					<li class="nav-item">
+      						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      						link 3</a>
+      						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          						<a class="dropdown-item" href="#">Action</a>
+          						<a class="dropdown-item" href="#">Another action</a>
+          						<a class="dropdown-item" href="#">Something else here</a>
+        					</div>
+
+      					</li>
+    				</ul>
+  				</div>
+			</nav>
+		</div>
+	</header>
+
+	<div id="main" class="container">
+		<div class="main-content mag-content clearfix">
+			<div class="row blog-content">
+				<div class="col-md-8">
+					<article class="post-wrapper clearfix">
+						<h1>Article Title</h1>
+						<p>Product management breakout fastworks net net yet proceduralize. Optimize for search. This proposal is a win-win situation which will cause a stellar paradigm shift, and produce a multi-fold increase in deliverables run it up the flag pole put in in a deck for our standup today. Punter price point drink the Kool-aid, yet let's schedule a standup during the sprint to review our kpis. Commitment to the cause . Globalize highlights so ramp up, for i also believe it's important for every member to be involved and invested in our company and this is one way to do so we need more paper good optics. Put your feelers out you better eat a reality sandwich before you walk back in that boardroom, nor product management breakout fastworks that's mint, well done build on a culture of contribution and inclusion. We need to harvest synergy effects exposing new ways to evolve our design language. Execute good optics so pig in a python, yet can I just chime in on that one diversify kpis, so timeframe it's not hard guys. Action item prethink great plan! let me diarize this, and we can synchronise ourselves at a later timepoint so in an ideal world but this is meaningless. Curate market-facing we need a paradigm shift, or we need a paradigm shift run it up the flag pole run it up the flag pole fire up your browser. Ramp up please advise soonest ladder up / ladder back to the strategy. Hit the ground running churning anomalies for get all your ducks in a row. Quantity future-proof we need distributors to evangelize the new line to local markets, for pixel pushing. If you want to motivate these clowns, try less carrot and more stick circle back let's prioritize the low-hanging fruit and face time, but hammer out, or shotgun approach, but baseline the procedure and samepage your department. Push back. Customer centric digitalize for ping me yet obviously and a better understanding of usage can aid in prioritizing future efforts. To be inspired is to become creative, innovative and energized we want this philosophy to trickle down to all our stakeholders bottleneck mice. Forcing function low engagement or blue sky thinking, but circle back. Run it up the flag pole. Mobile friendly innovation is hot right now. 
+						</p>
+					</article>
+				</div>
+				<div id="sidebar" class="col-md-4">
+					<aside class="sidebar clearfix">
+						<p>Product management breakout fastworks net net yet proceduralize. Optimize for search. This proposal is a win-win situation which will cause a stellar paradigm shift, and produce a multi-fold increase in deliverables run it up the flag pole put in in a deck for our standup today. Punter price point drink the Kool-aid, yet let's schedule a standup during the sprint to review our kpis. Commitment to the cause . Globalize highlights so ramp up, for i also believe it's important for every member to be involved and invested in our company and this is one way to do so we need more paper good optics. Put your feelers out you better eat a reality sandwich before you walk back in that boardroom, nor product management breakout fastworks that's mint, well done build on a culture of contribution and inclusion. We need to harvest synergy effects exposing new ways to evolve our design language. Execute good optics so pig in a python, yet can I just chime in on that one diversify kpis, so timeframe it's not hard guys. </p>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<footer>something here</footer>
+
+</body>
+</html>

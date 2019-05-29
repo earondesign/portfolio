@@ -86,13 +86,15 @@
 	background-color: #444;
 }
 .tc-carousel-style1 .car-nav:before {
-    border: 2px solid #444;
     display: inline-block;
     height: 50px;
     width: 50px;
     line-height: 48px;
     text-align: center;
     border-radius: 50%;
+    background: -moz-linear-gradient(-45deg, rgba(255,233, 83, 0.4) 0%, rgba(255,233, 83, 0.01) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(255,233, 83, 0.4) 0%, rgba(255,233, 83, 0.01) 100%);
+  background: linear-gradient(135deg, rgba(255,233, 83, 0.4) 0%, rgba(255,233, 83, 0.01) 100%);
 }
 .tc-carousel-style1 .car-prev:before {
 	left: 65px;
@@ -102,7 +104,9 @@
 	padding-left: 5px;
 }
 .tc-carousel-style1 .car-nav:hover:before {
-	background: #444;
+	background: -moz-linear-gradient(-45deg, rgba(255,207,156, 0.4) 0%, rgba(255,207,156, 0.01) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(255,207,156, 0.4) 0%, rgba(255,207,156, 0.01) 100%);
+  background: linear-gradient(135deg, rgba(255,207,156, 0.4) 0%, rgba(255,207,156, 0.01) 100%);
 	color: #fff;
 }
 .tc-carousel-style1.carousel:hover .car-prev:before {
