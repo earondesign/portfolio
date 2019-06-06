@@ -354,7 +354,7 @@
 	font-size: 32px;
 	color: #171717;
 	line-height: 32px;
-	font-weight: 400;
+	font-weight: 900;
 }
 
 .card-started .profile .subtitle {
@@ -555,7 +555,7 @@
 	font-size: 17px;
 	color: #171717;
 	line-height: 21px;
-	font-weight: 500;
+	font-weight: 900;
 }
 
 .content .title:before {
@@ -1085,6 +1085,12 @@
 	height: auto;
 }
 
+/*--- making only some images larger ---*/
+.item .wide-img{
+	max-width: 80%;
+    padding-top: 5%;
+}
+
 .box-item .image .info {
 	position: absolute;
 	left: 0;
@@ -1206,9 +1212,9 @@
 	margin: 0 0 0 -360px;
 	padding: 0;
 	top: 0;
-	left: 40%;
+	left: 34%;/* was 40%*/
 	overflow: auto;
-	max-width: 968px;
+	max-width: 1200px;/* was 968%*/
 	height: 100%;
 	background: #ffffff;
 }
@@ -1235,10 +1241,17 @@
 
 .mfp-wrap.popup-box-inline .desc {
 	padding: 20px 40px;
+	text-align: center;
+}
+
+.img-caption{
+	text-align: center;
+    height: 5px;
 }
 
 .mfp-wrap.popup-box-inline .desc .post-box .blog-content {
 	margin: 0;
+	text-align: left;
 }
 
 .mfp-wrap.popup-box-inline .desc .lnk,
